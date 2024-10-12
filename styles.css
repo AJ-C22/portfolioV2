@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg-color: #292828;
+  --text-color: #ffffff;
+  --secondary-text-color: #dee2e6;
+  --icon-size: 28px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(
+    800px circle at 0px 0px,
+    rgb(61, 59, 59),  /* Dark Gray */
+    rgb(29, 28, 28)      /* Black */
+  );
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  height: auto; /* Remove 100vh */
+  overflow: auto; /* Ensure overflow is set */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; /* Align items to the top */
+  padding-left: 50px;
+  padding-right: 40px;
+  padding-top: 40px; /* Add some padding at the top */
+}
+
+.container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+header {
+  margin-top: 120px;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  letter-spacing: 5px;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--secondary-text-color);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.description {
+  color: var(--secondary-text-color);
+  margin-bottom: 30px;
+  max-width: 55%; 
+}
+
+.social-icons {
+  position: relative;
+}
+
+.social-icons i {
+  height: 45px;
+  width: 45px;
+  color: rgb(173, 167, 167);
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 1px;
+  transition: all .45s ease;
+}
+
+.social-icons i:hover {
+  color: white;
+}
+
+.about h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: var(--text-color);
+  letter-spacing: 2px;
+}
+
+.about p {
+  color: var(--secondary-text-color);
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+strong {
+  color: var(--text-color);
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between experience items */
+  margin-top: 40px; /* Space above the section */
+}
+
+.experience h2 {
+  font-size: 2rem; /* Adjust heading size as needed */
+  color: var(--text-color);
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.experience-item {
+  display: flex;
+  gap: 20px; /* Space between date range and details */
+  align-items: flex-start; /* Aligns items at the start */
+}
+
+.date-range {
+  flex: 0 0 30%; /* Take up 30% of the width */
+  color: var(--secondary-text-color);
+  font-weight: bold;
+}
+
+.experience-details {
+  flex: 1; /* Take the remaining space */
+}
+
+.experience h3 {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  margin-bottom: 5px; /* Space between job title and company */
+}
+
+.experience h4 {
+  font-size: 1.2rem; /* Adjust font size for the company name */
+  color: var(--secondary-text-color);
+  margin-bottom: 10px; /* Space between company name and description */
+}
+
+.experience p {
+  color: var(--secondary-text-color);
+}
