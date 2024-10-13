@@ -7,8 +7,11 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/96e88eed38.js" crossorigin="anonymous"></script>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
+    <div class="blob"></div>
   <div class="container">
     <header>
       <h1 class="name">AJAI CHANDI</h1>
@@ -22,6 +25,8 @@
         <a href="https://github.com/AJ-C22" target="_blank"><i class="fa-brands fa-github"></i></a>
       </div>
     </header>
+
+    
 
     <section class="about">
       <h3>ABOUT</h3>
@@ -40,75 +45,71 @@
       </p>
     </section>
     
-    <section class="skills">
-        <h2>SKILLS</h2>
-        <div class="skills-grid">
-          <div class="skills-column">
-            <h3>Languages</h3>
-            <ul>
-              <li>JavaScript (ES6)</li>
-              <li>TypeScript</li>
-              <li>HTML</li>
-              <li>CSS/Sass</li>
-              <li>Python</li>
-              <li>SQL</li>
-              <li>R</li>
-            </ul>
-          </div>
-      
-          <div class="skills-column">
-            <h3>Frameworks</h3>
-            <ul>
-              <li>Ember & Glimmer</li>
-              <li>React</li>
-              <li>Jekyll</li>
-              <li>Node</li>
-              <li>D3</li>
-              <li>Wordpress</li>
-              <li>Timber</li>
-            </ul>
-          </div>
-      
-          <div class="skills-column">
-            <h3>Tools</h3>
-            <ul>
-              <li>Bash</li>
-              <li>Git & Github</li>
-              <li>Gulp & Grunt</li>
-              <li>Chrome DevTools</li>
-              <li>Postman</li>
-              <li>MongoDB</li>
-            </ul>
-          </div>
-        </div>
-    </section>
+    
 
     <section class="experience">
         <h2>EXPERIENCE</h2>
         
         <div class="experience-item">
-          <div class="date-range">Jan 2023 - Present</div>
+            <div class="date-range">Jan 2025 - Apr 2025</div>
+            <div class="experience-details">
+              <h3>Data Insights & Analytics Intern</h3>
+              <h4>Loblaws Companies Limited</h4>
+              <p>Incoming January 2025. </p>
+              <div class="skill-tags">
+                <span class="skill-bubble">Python</span>
+                <span class="skill-bubble">SQL</span>
+                <span class="skill-bubble">PowerBI</span>
+                <span class="skill-bubble">Excel</span>
+                <span class="skill-bubble">Google Cloud Platform</span>
+              </div>
+            </div>
+          </div>
+
+        <div class="experience-item">
+            <div class="date-range">Sept 2024 - Present</div>
+            <div class="experience-details">
+              <h3>Software Developer</h3>
+              <h4>UW Data Science Club</h4>
+              <p>Worked in the Exectuive Developer team to create a QR code-based automated sign-in system for events. The feature was rolled out in under a month, gaining 300 users. Also helped maintain the official website while revamping their MongoDB integration. </p>
+              <div class="skill-tags">
+                <span class="skill-bubble">NextJS</span>
+                <span class="skill-bubble">Typescript</span>
+                <span class="skill-bubble">MongoDB</span>
+                <span class="skill-bubble">Twilio API</span>
+              </div>
+            </div>
+          </div>
+
+        <div class="experience-item">
+          <div class="date-range">May 2024 - August 2024</div>
           <div class="experience-details">
-            <h3>Data Analyst Intern • Assembly Corp.</h3>
+            <h3>Data Analyst Intern</h3>
+            <h4>Assembly Corp.</h4>
             <p>Responsible for analyzing data trends and generating reports to assist in business decisions.</p>
             <div class="skill-tags">
-              <span class="skill-bubble">Excel</span>
-              <span class="skill-bubble">Python</span>
+              <span class="skill-bubble">PowerBI</span>
               <span class="skill-bubble">SQL</span>
+              <span class="skill-bubble">Excel</span>
+              <span class="skill-bubble">APIs</span>
+              <span class="skill-bubble">Workato</span>
             </div>
           </div>
         </div>
       
         <div class="experience-item">
-          <div class="date-range">Jun 2022 - Dec 2022</div>
+          <div class="date-range">Mar 2024 - Present</div>
           <div class="experience-details">
-            <h3>Data Analyst Intern</h3>
-            <h4>Assembly Corp.</h4>
-            <p>Worked on developing web applications and enhancing user experience through feedback and testing.</p>
+            <h3>Software Engineer</h3>
+            <h4>Waterloo Aerial Robotics Group</h4>
+            <p>Built, trained and optimized object detection models for autonomous drones. Helped develop object-avoidance modules for improved flight pathing and overall accuracy.</p>
             <div class="skill-tags">
-              <span class="skill-bubble">JavaScript</span>
-              <span class="skill-bubble">React</span>
+              <span class="skill-bubble">Python</span>
+              <span class="skill-bubble">PyTorch</span>
+              <span class="skill-bubble">YOLO</span>
+              <span class="skill-bubble">OpenCV</span>
               <span class="skill-bubble">Git</span>
+              <span class="skill-bubble">Docker</span>
             </div>
           </div>
         </div>
@@ -118,49 +119,185 @@
         <h2>PROJECTS</h2>
       
         <div class="project-item">
-          <img src="project1-thumbnail.jpg" alt="Build a Spotify Connected App" class="project-thumbnail" />
+          <img src="Images/uniNest.webp" alt="Build a Spotify Connected App" class="project-thumbnail" />
           <div class="project-details">
-            <h3>Build a Spotify Connected App <a href="#">↗</a></h3>
-            <p>Video course that teaches how to build a web app with the Spotify Web API. Topics include REST APIs, user auth flows, Node, Express, React, Styled Components, and more.</p>
+            <h3>UniNest<a href="#">↗</a></h3>
+            <p>Housing price estimator for Canadian University cities. Housing data was scraped from Kijiji and then cleaned, visualized and used to build a Linear Regression model.</p>
+            
+            <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-link"></i> GitHub
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Web App
+                </a>
+              </div>
+
             <div class="skill-tags">
-                <span class="skill-bubble">JavaScript</span>
-                <span class="skill-bubble">React</span>
-                <span class="skill-bubble">Git</span>
+                <span class="skill-bubble">Python</span>
+                <span class="skill-bubble">Pandas</span>
+                <span class="skill-bubble">Tableau</span>
+                <span class="skill-bubble">Scikit-Learn</span>
+                <span class="skill-bubble">Flask APIs</span>
               </div>
           </div>
         </div>
       
         <div class="project-item">
-          <img src="project2-thumbnail.jpg" alt="Spotify Profile" class="project-thumbnail" />
-          <div class="project-details">
-            <h3>Spotify Profile <a href="#">↗</a></h3>
-            <p>Web app for visualizing personalized Spotify data. View top artists, tracks, recently played tracks, and audio information. Create and save new playlists of recommended tracks.</p>
-            <div class="stars">★ 656</div>
-            <div class="skill-tags">
-                <span class="skill-bubble">JavaScript</span>
-                <span class="skill-bubble">React</span>
-                <span class="skill-bubble">Git</span>
+            <img src="Images/uwmathdark.png" alt="Spotify Profile" class="project-thumbnail" />
+            <div class="project-details">
+              <h3>UW Math Planner<a href="#">↗</a></h3>
+              <p>Web app for Mathematics students at the University of Waterloo to help plan the most efficient path to graduation for any major/minor combination.</p>
+                
+              
+              <!-- Links Section -->
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-link"></i> GitHub
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Web App
+                </a>
             </div>
-          </div>
+              <div class="skill-tags">
+                <span class="skill-bubble">Python</span>
+                <span class="skill-bubble">Javascript</span>
+                <span class="skill-bubble">HTML</span>
+                <span class="skill-bubble">CSS</span>
+                <span class="skill-bubble">PostgreSQL</span>
+                <span class="skill-bubble">Python</span>
+                <span class="skill-bubble">AWS</span>
+              </div>
+            </div>
         </div>
+          
       
         <div class="project-item">
-          <img src="project3-thumbnail.jpg" alt="Halcyon Theme" class="project-thumbnail" />
+          <img src="Images/courtVision1.png" alt="Halcyon Theme" class="project-thumbnail" />
           <div class="project-details">
-            <h3>Halcyon Theme <a href="#">↗</a></h3>
-            <p>Minimal dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more.</p>
-            <div class="installs">⬇ 100k+ Installs</div>
+            <h3>CourtVision<a href="#">↗</a></h3>
+            <p>An AI-enhanced basketball score tracker to automatically keep track of the score of opposing teams.</p>
+
+            <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-link"></i> GitHub
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Web App
+                </a>
+              </div>
+
             <div class="skill-tags">
-                <span class="skill-bubble">JavaScript</span>
-                <span class="skill-bubble">React</span>
-                <span class="skill-bubble">Git</span>
+                <span class="skill-bubble">Python</span>
+                <span class="skill-bubble">PyTorch</span>
+                <span class="skill-bubble">YOLO</span>
+                <span class="skill-bubble">OpenCV</span>
             </div>
           </div>
         </div>
+
+        <div class="project-item">
+            <img src="Images/spotify-app.png" alt="Spotify Statistics" class="project-thumbnail" />
+            <div class="project-details">
+              <h3>Sportify Statistics Visualizer<a href="#">↗</a></h3>
+              <p>A web app for vsiualizing Spotify statistics. View your top artists, top genres, top songs, song lengths, most listened to decades, and more!</p>
+              
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-link"></i> GitHub
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Web App
+                </a>
+              </div>
+              
+              <div class="skill-tags">
+                  <span class="skill-bubble">Python</span>
+                  <span class="skill-bubble">Spotify API</span>
+                  <span class="skill-bubble">HTML</span>
+                  <span class="skill-bubble">CSS</span>
+                  <span class="skill-bubble">Pandas</span>
+                  <span class="skill-bubble">Matplotlib</span>
+                  <span class="skill-bubble">Flask APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="Images/hopQueen.png" alt="Spotify Statistics" class="project-thumbnail" />
+            <div class="project-details">
+              <h3>Hop Queen<a href="#">↗</a></h3>
+              <p>A 2D-platformer game modelled off the game "Jump King" made in Unity.</p>
+              
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-link"></i> GitHub
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Web App
+                </a>
+              </div>
+              
+              <div class="skill-tags">
+                  <span class="skill-bubble">C#</span>
+                  <span class="skill-bubble">Unity</span>
+                  <span class="skill-bubble">ShaderLab</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="Images/YT2.png" alt="Spotify Statistics" class="project-thumbnail" />
+            <div class="project-details">
+              <h3>YT Music Converter<a href="#">↗</a></h3>
+              <p>A web app to copy your Youtube Music playlist directly to Spotify.</p>
+              
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-link"></i> GitHub
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Web App
+                </a>
+              </div>
+              
+              <div class="skill-tags">
+                  <span class="skill-bubble">Python</span>
+                  <span class="skill-bubble">Spotify API</span>
+                  <span class="skill-bubble">HTML</span>
+                  <span class="skill-bubble">CSS</span>
+                  <span class="skill-bubble">Flask APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <img src="Images/Kijiji1.jpg" alt="Spotify Statistics" class="project-thumbnail" />
+            <div class="project-details">
+              <h3>Kijiji Web Scraper<a href="#">↗</a></h3>
+              <p>A script to scrape Kijiji real-estate listings [ developed for UniNest ]</p>
+              
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-link"></i> GitHub
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Web App
+                </a>
+              </div>
+              
+              <div class="skill-tags">
+                  <span class="skill-bubble">Python</span>
+                  <span class="skill-bubble">Beautiful Soup</span>
+                  <span class="skill-bubble">Pandas</span>
+              </div>
+            </div>
+          </div>
+
+
       </section>
-      
-      
-    
   </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
