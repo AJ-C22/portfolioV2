@@ -22,7 +22,7 @@ body {
   height: auto; /* Remove 100vh */
   overflow: auto; /* Ensure overflow is set */
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start; /* Align items to the top */
   padding-left: 50px;
   padding-right: 40px;
@@ -33,16 +33,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 600px;  /* Reduced size */
-  height: 600px; /* Reduced size */
+  width: 650px;
+  height: 650px;
   border-radius: 100%;
   background-image: linear-gradient(45deg, #29292b 10%, #2b2b2f);
-  filter: blur(100px);  /* Less blur to tighten the spread */
-  transition: transform 50ms linear, filter 150ms ease-out;
+  filter: blur(60px);
+  transition: all 450ms ease-out;
   position: fixed;
   pointer-events: none;
+  left: 0;
+  top: 0;
+  transition: transform 50ms linear, filter 150ms ease-out;
   z-index: -1;
 }
+
 
 
 
@@ -336,4 +340,39 @@ strong {
   border-radius: 15px;
   font-size: 0.8rem;
 }
+
+@media (max-width: 768px) {
+  .element {
+      text-align: right; /* Align text to the right on smaller screens */
+  }
+}
+
+footer {
+  color: var(--light); /* Light text color */
+  padding: 15px 0;
+  text-align: left;
+  font-size: 0.9rem;
+  width: 100%; /* Full width */
+  margin: 40px; /* Optional spacing from the content above */
+
+}
+
+footer p {
+  max-width: 55%;
+}
+footer a {
+  color: var(--light);
+  text-decoration: none;
+  transition: color 0.3s;
+  color: rgb(176, 158, 158)
+}
+
+footer a:hover {
+  color: #c5c5c5; /* Hover effect */
+}
+
+footer p {
+  margin: 5px 0;
+}
+
 
