@@ -85,7 +85,7 @@ header h2 {
 
 .social-icons {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 .social-icons i {
@@ -108,15 +108,15 @@ header h2 {
 /*-------------------About Section-------------------*/
 .about h3 {
   font-size: 1rem;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   color: var(--text-color);
   letter-spacing: 2px;
 }
 
 .about p {
   color: var(--secondary-text-color);
-  margin-bottom: 15px;
-  line-height: 1.8;
+  margin-bottom: 0px;
+  line-height: 1.6;
 }
 
 strong {
