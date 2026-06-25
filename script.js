@@ -1,27 +1,22 @@
-const blob = document.querySelector('.blob');
+const themeToggle = document.querySelector('.theme-toggle');
+const themeIcon = themeToggle?.querySelector('i');
 
-document.addEventListener('mousemove', (event) => {
-  const { clientX, clientY } = event;
-
-  const bodyStyles = getComputedStyle(document.body);
-  const paddingLeft = parseFloat(bodyStyles.paddingLeft);
-  const paddingTop = parseFloat(bodyStyles.paddingTop);
-
-  const blobWidth = blob.offsetWidth / 2;
-  const blobHeight = blob.offsetHeight / 2;
-
-  const x = clientX - blobWidth - paddingLeft;
-  const y = clientY - blobHeight - paddingTop;
-
-  blob.style.transform = `translate(${x}px, ${y}px)`;
+themeToggle?.addEventListener('click', () => {
+  document.body.classList.toggle('light');
+  const isLight = document.body.classList.contains('light');
+  if (themeIcon) {
+    themeIcon.className = isLight
+      ? 'fa-regular fa-moon'
+      : 'fa-regular fa-sun';
+  }
+  themeToggle.setAttribute(
+    'aria-label',
+    isLight ? 'Toggle dark mode' : 'Toggle light mode'
+  );
 });
 
 window.addEventListener('load', () => {
-  const elements = document.querySelectorAll('.fade-in-up');
-
-  elements.forEach((element, index) => {
-    setTimeout(() => {
-      element.classList.add('visible');
-    }, index * 100); 
+  document.querySelectorAll('.fade-in-up').forEach((element, index) => {
+    setTimeout(() => element.classList.add('visible'), index * 80);
   });
 });
