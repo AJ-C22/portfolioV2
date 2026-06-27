@@ -59,14 +59,14 @@ header h1 {
   font-weight: 600;
   line-height: 1.15;
   letter-spacing: 0.04em;
-  margin-bottom: var(--header-stack-gap);
+  margin-bottom: 1rem;
 }
 
 header h2 {
   font-size: 1.3rem;
   font-weight: 400;
   color: var(--secondary-text-color);
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   letter-spacing: -0.2px;
 }
 
