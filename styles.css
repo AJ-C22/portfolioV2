@@ -264,15 +264,6 @@ strong {
   position: relative;
 }
 
-.project-thumbnail {
-  width: 140px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 3px;
-  border: none;
-  opacity: 0.92;
-}
-
 .project-details {
   flex: 1;
 }
@@ -463,11 +454,6 @@ body {
   .project-item {
     flex-direction: column;
     gap: 15px;
-  }
-
-  .project-thumbnail {
-    width: 100%;
-    height: auto;
   }
 
   .project-details h3 {
